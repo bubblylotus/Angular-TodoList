@@ -1,0 +1,15 @@
+.list-group-item{
+    border: none;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+a:hover, a:focus{
+    background-color: transparent;
+    text-decoration: none;
+}
+.done{
+    text-decoration: line-through;
+    color: gray;
+}

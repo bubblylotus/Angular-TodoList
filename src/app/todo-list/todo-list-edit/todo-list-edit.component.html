@@ -1,0 +1,21 @@
+<form class="form-group" (ngSubmit)="onAddTodo(f)" #f="ngForm">
+    <div class="col-xs-8">
+        <input type="text" 
+        class="form-control" 
+        placeholder="New Todo..." 
+        ngModel 
+        name="todoText"
+        required>
+    </div>
+    <div class="col-xs-2">
+        <button 
+        class="btn btn-success"
+        [disabled] = "!f.valid && f.touched">Add Todo</button>
+    </div>
+    <div class="col-xs-2">
+        <button 
+        class="btn btn-primary"
+        type="button"
+        (click) = "onClear(f)">Clear</button>
+    </div>
+</form>
