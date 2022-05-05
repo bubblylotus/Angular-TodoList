@@ -18,6 +18,6 @@ export class TodoItemComponent implements OnInit {
     this.todoService.deleteTodo(this.todoIndex);
   }
   onEdit(){
-
+    this.todoService.startedEditing.next(this.todoIndex);
   }
 }

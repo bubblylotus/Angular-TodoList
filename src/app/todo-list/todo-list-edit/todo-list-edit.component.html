@@ -10,7 +10,7 @@
     <div class="col-xs-2">
         <button 
         class="btn btn-success"
-        [disabled] = "!f.valid && f.touched">Add Todo</button>
+        [disabled] = "!f.valid">{{ editMode? 'Update' : 'Add' }}</button>
     </div>
     <div class="col-xs-2">
         <button 
