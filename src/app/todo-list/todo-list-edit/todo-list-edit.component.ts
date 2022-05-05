@@ -33,6 +33,7 @@ export class TodoListEditComponent implements OnInit, OnDestroy {
     const newTodo = new Todo(form.value.todoText, false);
     if(this.editMode === true){
       this.todoService.updateTodo(this.editedItemIndex, newTodo);
+      this.editMode = false;
     }
     else{
       this.todoService.addTodo(newTodo);
